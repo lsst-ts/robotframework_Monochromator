@@ -1,0 +1,8 @@
+###  Test Suite list ###
+#  Change the title of the test results
+--name StateCommands
+--output StateCommands
+
+# List of test suites
+StateCommands.robot
+InvalidStateCommands.robot
