@@ -78,6 +78,7 @@ class atMonochromator_SAL:
 
 	def _beforeCommand(self):
 		self.flushStates()
+		self.flushAllEvents()
 
 	def getCurrentTime(self):
 		data = self._SALatMonochromator.getCurrentTime()
@@ -126,19 +127,20 @@ class atMonochromator_SAL:
 		self._beforeCommand()
 		data = atMonochromator_command_exitControlC()
 		data.exitControl = True
-		cmdId = self._SALatMonochromator.atMonochromator_command_exitControlC(data)
+		cmdId = self._SALatMonochromator.issueCommand_exitControl(data)
 		self._SALatMonochromator.waitForCompletion_exitControl(cmdId, 10)
 		self._afterCommand()
 
 	def issueEnterControlCommand(self):
 		self._beforeCommand()
 		data = atMonochromator_command_enterControlC()
-		data.exitControl = True
+		data.enterControl = True
 		cmdId = self._SALatMonochromator.atMonochromator_command_enterControlC(data)
 		self._SALatMonochromator.waitForCompletion_enterControl(cmdId, 10)
 		self._afterCommand()
 
 	def issueSelectGratingCommand(self, Grating=1):
+		self._beforeCommand()
 		data = atMonochromator_command_SelectGratingC()
 		data.gratingType = Grating
 		cmdId = self._SALatMonochromator.issueCommand_SelectGrating(data)
@@ -146,6 +148,7 @@ class atMonochromator_SAL:
 		self._afterCommand()
 
 	def issueUpdateMonochromatorSetupCommand(self, Grating=1, exitSlitWidth=2.0, entranceSlitWidth=2.0, wavelength=400.0):
+		self._beforeCommand()
 		data = atMonochromator_command_updateMonochromatorSetupC()
 		data.gratingType=Grating
 		data.fontExitSlitWidth=exitSlitWidth
@@ -156,6 +159,7 @@ class atMonochromator_SAL:
 		self._afterCommand()
 
 	def issueChangeSlitWidthCommand(self, slit=2, slitWidth=2.0):
+		self._beforeCommand()
 		data = atMonochromator_command_ChangeSlitWidthC()
 		data.slit=slit
 		data.slitWidth=slitWidth
@@ -164,6 +168,7 @@ class atMonochromator_SAL:
 		self._afterCommand()
 
 	def issueChangeWavelengthCommand(self, wavelength=400.0):
+		self._beforeCommand()
 		data = atMonochromator_command_ChangeWavelengthC()
 		data.wavelength=wavelength
 		cmdId = self._SALatMonochromator.issueCommand_ChangeWavelength(data)
@@ -258,7 +263,32 @@ class atMonochromator_SAL:
 		self.flushDetailedState()
 		self.flushSummaryState()
 		
-		
+	def flushWavenelgnth(self):
+		data = atMonochromator_logevent_WavelengthC()
+		retVal = self._SALatMonochromator.flushSamples_logevent_Wavelength(data)
+		return retVal==0		
+
+	def flushSlitWidth(self):
+		data = atMonochromator_logevent_SlitWidthC()
+		retVal = self._SALatMonochromator.flushSamples_logevent_SlitWidth(data)
+		return retVal==0
+
+	def flushSelectedGrating(self):
+		data = atMonochromator_logevent_SelectedGratingC()
+		retVal = self._SALatMonochromator.flushSamples_logevent_SelectedGrating(data)
+		return retVal==0
+
+	def flushRejectedCommand(self):
+		data = atMonochromator_logevent_RejectedCommandC()
+		retVal = self._SALatMonochromator.flushSamples_logevent_RejectedCommand(data)
+		return retVal==0
+
+	def flushAllEvents(self):
+		retVal1 = self.flushSelectedGrating()
+		retVal2 = self.flushWavenelgnth()
+		retVal3 = self.flushSlitWidth()
+		retVal4 = self.flushRejectedCommand()
+		return (retVal1 or retVal1 or retVal3 or retVal4)
 
 	######## Utility Functions ########
 

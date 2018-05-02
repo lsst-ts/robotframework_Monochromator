@@ -20,14 +20,15 @@ Verify Detailed State Event
     Should Be Equal As Integers    ${data.detailedState}    ${expectedState}
 
 Verify Command Rejection Warning
-    [Arguments]    ${command}    ${reason}
+    [Arguments]    ${command}    ${detailedState}
     Comment    Verify the command was rejected.
-    ${valid}    ${data}=    Get Event Command Rejection Warning
-    Log    ${data.Timestamp}
-    Log    ${data.Command}
-    Log    ${data.Reason}
+    ${valid}    ${data}=    Get Event Rejected Command
+    Log    ${data.timestamp}
+    Log    ${data.commandValue}
+    Log    ${data.detailedState}
     Should Be True    ${valid}
-    Should Be Equal As Strings    "${data.Reason}"    ${reason}
+    Should Be Equal As Integers    ${data.detailedState}    ${detailedState}
+    Should Be Equal As Integers    ${data.commandValue}    ${command}
 
 Get Event
     [Arguments]    ${EventTopic}

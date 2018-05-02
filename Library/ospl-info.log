@@ -1,0 +1,81 @@
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : main thread 7f464e772740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525286909.806652868
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : spliced 7f464e787700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525286909.808885312
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : spliced 7f464e787700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525286909.812397433
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : spliced 7f464e787700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525286909.813361821
+========================================================================================
+Report      : WARNING
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : ddsi2 7f46431ec700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525286909.818112646
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:29 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : ddsi2 7f46431ec700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525286909.821019467
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:30 EDT 2018
+Description : The durability service can by identified by ID: 513274626
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : durability 7f464355e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525286910.625491340
+========================================================================================
+Report      : INFO
+Date        : Wed May 02 14:48:34 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <5154>
+Thread      : durability 7f464355e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525286914.839296396

@@ -44,3 +44,18 @@ ${Mirror}	3
 ${NA}			0
 ${FrontEntrance}	1
 ${FrontExit}		2
+
+##### Command Values #####
+${CommandDisable}			0
+${CommandEnable}			1
+${CommandExit}				2
+${CommandGoToStandby}			3
+${CommandOnHeartbeat}			4
+${CommandOnIncomingMessagingError}	5
+${CommandOnInterrupt}			6
+${CommandStart}				7
+${CommandCalibrateWavelength}		8
+${CommandChangeWavelength}		9
+${CommandSelectGrating}			10
+${CommandChangeSlitWidth}		11
+${CommandSetupMonochromator}		12

@@ -49,6 +49,36 @@ Update Wavelength Command - ManualSettingUpState
     wait Time
     Verify Detailed State Event    ${DetailedStopped}
 
+Update SlitWidth Command - ManualSettingUpState
+    [Tags]    functional
+    Comment    issue Change Slitwidth Command.
+    Issue Change Slit Width Command
+    Comment    Verify system enters Setting Up State.
+    Verify Detailed State Event    ${DetailedMonoManualSetup}
+    Comment	Wait time to finish setting up.    
+    wait Time
+    Verify Detailed State Event    ${DetailedStopped}
+
+Update Grating Command - ManualSettingUpState
+    [Tags]    functional
+    Comment    issue Change Grating Command.
+    Issue Select Grating Command
+    Comment    Verify system enters Setting Up State.
+    Verify Detailed State Event    ${DetailedMonoManualSetup}
+    Comment	Wait time to finish setting up.    
+    wait Time
+    Verify Detailed State Event    ${DetailedStopped}
+
+Update All Command - AutomaticSettingUpState
+    [Tags]    functional
+    Comment    issue Change Grating Command.
+    Issue Update Monochromator Setup Command
+    Comment    Verify system enters Automatic Setting Up State.
+    Verify Detailed State Event    ${DetailedMonoAutomaticSetup}
+    Comment	Wait time to finish setting up.    
+    wait Time
+    Verify Detailed State Event    ${DetailedStopped}
+
 Disable Command - Cleanup
     [Tags]    functional
     Comment    Issue Disable Command.

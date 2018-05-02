@@ -1,688 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.0.dev1 (Python 3.6.3 on linux)" generated="20180430 23:44:21.300">
-<suite id="s1" name="StateCommands" source="/home/andres/robotframework_Monochromator/StateCommands.robot">
-<kw name="Log Many" library="BuiltIn" type="setup">
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<arguments>
-<arg>host=${Host}</arg>
-<arg>CSC=${subSystem}</arg>
-<arg>timeout=${timeout}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:28.526" level="INFO">host=0.0.0.0</msg>
-<msg timestamp="20180430 23:44:28.527" level="INFO">CSC=atMonochromator</msg>
-<msg timestamp="20180430 23:44:28.527" level="INFO">timeout=30s</msg>
-<status status="PASS" starttime="20180430 23:44:28.526" endtime="20180430 23:44:28.527"></status>
-</kw>
-<test id="s1-t1" name="Start Command">
+<robot generator="Robot 3.1.0.dev1 (Python 3.6.3 on linux)" generated="20180502 17:15:59.514">
+<suite id="s1" name="UpdateMonochromatorParemeters" source="/home/andres/robotframework_Monochromator/UpdateMonochromatorParemeters.robot">
+<test id="s1-t1" name="From Enable Update Wavelength and verify value">
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
-<arg>Issue Start Command.</arg>
+<arg>Update Wavelength.</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:44:28.527" endtime="20180430 23:44:28.527"></status>
-</kw>
-<kw name="Issue Start Command" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:44:28.527" endtime="20180430 23:44:40.441"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Disabled State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.442" endtime="20180430 23:44:40.442"></status>
-</kw>
-<kw name="Verify Summary State Event" library="common">
-<arguments>
-<arg>${SummaryDisabled}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every sub-State transition triggers a Summary State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.442" endtime="20180430 23:44:40.442"></status>
-</kw>
-<kw name="Get Event Summary State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:44:40.443" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:44:40.443" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7f0499616068&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:40.443" endtime="20180430 23:44:40.443"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:40.443" level="INFO">1</msg>
-<status status="PASS" starttime="20180430 23:44:40.443" endtime="20180430 23:44:40.443"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.444" endtime="20180430 23:44:40.444"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:40.444" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:40.444" endtime="20180430 23:44:40.444"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:44:40.442" endtime="20180430 23:44:40.444"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:44:28.527" endtime="20180430 23:44:40.445" critical="yes"></status>
-</test>
-<test id="s1-t2" name="Verify Detailed State - Standby">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Disabled Detailed State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.445" endtime="20180430 23:44:40.445"></status>
-</kw>
-<kw name="Verify Detailed State Event" library="common">
-<arguments>
-<arg>${DetailedDisabled}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.446" endtime="20180430 23:44:40.446"></status>
-</kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:44:40.447" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:44:40.447" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f04996165e0&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:40.446" endtime="20180430 23:44:40.447"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:40.447" level="INFO">1</msg>
-<status status="PASS" starttime="20180430 23:44:40.447" endtime="20180430 23:44:40.447"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.448" endtime="20180430 23:44:40.448"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:40.448" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:40.448" endtime="20180430 23:44:40.448"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:44:40.445" endtime="20180430 23:44:40.448"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:44:40.445" endtime="20180430 23:44:40.448" critical="yes"></status>
-</test>
-<test id="s1-t3" name="Enable Command">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Issue Enable Command.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:40.449" endtime="20180430 23:44:40.449"></status>
-</kw>
-<kw name="Issue Enable Command" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:44:40.450" endtime="20180430 23:44:52.571"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Enabled State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.571" endtime="20180430 23:44:52.571"></status>
-</kw>
-<kw name="Verify Summary State Event" library="common">
-<arguments>
-<arg>${SummaryEnabled}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every sub-State transition triggers a Summary State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.572" endtime="20180430 23:44:52.572"></status>
-</kw>
-<kw name="Get Event Summary State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:44:52.572" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:44:52.572" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7f0499613458&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:52.572" endtime="20180430 23:44:52.572"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:52.573" level="INFO">2</msg>
-<status status="PASS" starttime="20180430 23:44:52.573" endtime="20180430 23:44:52.573"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.573" endtime="20180430 23:44:52.573"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:52.574" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:52.573" endtime="20180430 23:44:52.574"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:44:52.571" endtime="20180430 23:44:52.574"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:44:40.449" endtime="20180430 23:44:52.574" critical="yes"></status>
-</test>
-<test id="s1-t4" name="Verify Detailed State - StoppedState">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Stopped Detailed State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.575" endtime="20180430 23:44:52.575"></status>
-</kw>
-<kw name="Verify Detailed State Event" library="common">
-<arguments>
-<arg>${DetailedStopped}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.576" endtime="20180430 23:44:52.576"></status>
-</kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:44:52.576" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:44:52.576" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f04958e1618&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:52.576" endtime="20180430 23:44:52.576"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:52.577" level="INFO">7</msg>
-<status status="PASS" starttime="20180430 23:44:52.576" endtime="20180430 23:44:52.577"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.577" endtime="20180430 23:44:52.577"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:44:52.577" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:44:52.577" endtime="20180430 23:44:52.577"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:44:52.575" endtime="20180430 23:44:52.578"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:44:52.574" endtime="20180430 23:44:52.578" critical="yes"></status>
-</test>
-<test id="s1-t5" name="Update Wavelength Command - ManualSettingUpState">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>issue Change Wavelength Command.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:44:52.578" endtime="20180430 23:44:52.579"></status>
+<status status="PASS" starttime="20180502 17:16:06.469" endtime="20180502 17:16:06.469"></status>
 </kw>
 <kw name="Issue Change Wavelength Command" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:44:52.579" endtime="20180430 23:45:04.645"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
-<arg>Verify system enters Setting Up State.</arg>
+<arg>${400}</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:45:04.645" endtime="20180430 23:45:04.645"></status>
+<status status="PASS" starttime="20180502 17:16:06.469" endtime="20180502 17:16:17.969"></status>
 </kw>
-<kw name="Verify Detailed State Event" library="common">
+<kw name="Verify Wavelength Value" library="monochromator_helpers">
 <arguments>
-<arg>${DetailedMonoManualSetup}</arg>
+<arg>${500}</arg>
 </arguments>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
+<arg>Every change wavelength command triggers a wavelength Event.</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:45:04.646" endtime="20180430 23:45:04.646"></status>
+<status status="PASS" starttime="20180502 17:16:17.970" endtime="20180502 17:16:17.970"></status>
 </kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
+<kw name="Get Event Wavelength" library="atMonochromator_SAL">
 <assign>
 <var>${valid}</var>
 <var>${data}</var>
 </assign>
-<msg timestamp="20180430 23:45:04.647" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:04.647" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f04958ea308&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:04.646" endtime="20180430 23:45:04.647"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:04.647" level="INFO">11</msg>
-<status status="PASS" starttime="20180430 23:45:04.647" endtime="20180430 23:45:04.647"></status>
+<msg timestamp="20180502 17:16:17.971" level="INFO">${valid} = True</msg>
+<msg timestamp="20180502 17:16:17.971" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_WavelengthC object at 0x7f845b44b7a0&gt;</msg>
+<status status="PASS" starttime="20180502 17:16:17.970" endtime="20180502 17:16:17.971"></status>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <doc>Fails if the given condition is not true.</doc>
 <arguments>
 <arg>${valid}</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:45:04.647" endtime="20180430 23:45:04.648"></status>
+<status status="PASS" starttime="20180502 17:16:17.971" endtime="20180502 17:16:17.972"></status>
 </kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
+<kw name="Verify Irrational Value" library="common">
+<doc>This keyword requires the name of the attribute, its value, the tolerance and then the expected value, in that order.</doc>
 <arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
+<arg>Wavelength</arg>
+<arg>${data.wavelength}</arg>
+<arg>${wavelengthTol}</arg>
+<arg>${expectedWavelgength}</arg>
 </arguments>
-<msg timestamp="20180430 23:45:04.648" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:04.648" endtime="20180430 23:45:04.648"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:45:04.646" endtime="20180430 23:45:04.648"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
 <arguments>
-<arg>Wait time to finish setting up.</arg>
+<arg>${value}</arg>
+<arg>${4}</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:45:04.648" endtime="20180430 23:45:04.648"></status>
-</kw>
-<kw name="Wait Time" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:45:04.648" endtime="20180430 23:45:14.658"></status>
-</kw>
-<kw name="Verify Detailed State Event" library="common">
-<arguments>
-<arg>${DetailedStopped}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:14.659" endtime="20180430 23:45:14.659"></status>
-</kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
 <assign>
-<var>${valid}</var>
-<var>${data}</var>
+<var>${value}</var>
 </assign>
-<msg timestamp="20180430 23:45:14.660" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:14.660" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f04958e1ce0&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:14.659" endtime="20180430 23:45:14.660"></status>
+<msg timestamp="20180502 17:16:17.973" level="INFO">${value} = 400.0</msg>
+<status status="PASS" starttime="20180502 17:16:17.972" endtime="20180502 17:16:17.973"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
 <arguments>
-<arg>${data.detailedState}</arg>
+<arg>${ExpectedValue}</arg>
+<arg>${4}</arg>
 </arguments>
-<msg timestamp="20180430 23:45:14.660" level="INFO">7</msg>
-<status status="PASS" starttime="20180430 23:45:14.660" endtime="20180430 23:45:14.660"></status>
+<assign>
+<var>${ExpectedValue}</var>
+</assign>
+<msg timestamp="20180502 17:16:17.973" level="INFO">${ExpectedValue} = 500.0</msg>
+<status status="PASS" starttime="20180502 17:16:17.973" endtime="20180502 17:16:17.973"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Attribute: ${attribute}</arg>
+<arg>Value: ${value}</arg>
+<arg>Tolerance: ${tolerance}</arg>
+<arg>Expected Value: ${ExpectedValue}</arg>
+</arguments>
+<msg timestamp="20180502 17:16:17.974" level="INFO">Attribute: Wavelength</msg>
+<msg timestamp="20180502 17:16:17.974" level="INFO">Value: 400.0</msg>
+<msg timestamp="20180502 17:16:17.974" level="INFO">Tolerance: 1</msg>
+<msg timestamp="20180502 17:16:17.974" level="INFO">Expected Value: 500.0</msg>
+<status status="PASS" starttime="20180502 17:16:17.973" endtime="20180502 17:16:17.974"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} + ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${high}</var>
+</assign>
+<msg timestamp="20180502 17:16:17.975" level="INFO">${high} = 501.0</msg>
+<status status="PASS" starttime="20180502 17:16:17.974" endtime="20180502 17:16:17.975"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} - ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${low}</var>
+</assign>
+<msg timestamp="20180502 17:16:17.975" level="INFO">${low} = 499.0</msg>
+<status status="PASS" starttime="20180502 17:16:17.975" endtime="20180502 17:16:17.975"></status>
 </kw>
 <kw name="Should Be True" library="BuiltIn">
 <doc>Fails if the given condition is not true.</doc>
 <arguments>
-<arg>${valid}</arg>
+<arg>${value} &lt;= ${high}</arg>
 </arguments>
-<status status="PASS" starttime="20180430 23:45:14.660" endtime="20180430 23:45:14.661"></status>
+<status status="PASS" starttime="20180502 17:16:17.975" endtime="20180502 17:16:17.975"></status>
 </kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
 <arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
+<arg>${value} &gt;= ${low}</arg>
 </arguments>
-<msg timestamp="20180430 23:45:14.661" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:14.661" endtime="20180430 23:45:14.661"></status>
+<msg timestamp="20180502 17:16:17.976" level="FAIL">'400.0 &gt;= 499.0' should be true.</msg>
+<status status="FAIL" starttime="20180502 17:16:17.976" endtime="20180502 17:16:17.976"></status>
 </kw>
-<status status="PASS" starttime="20180430 23:45:14.658" endtime="20180430 23:45:14.661"></status>
+<status status="FAIL" starttime="20180502 17:16:17.972" endtime="20180502 17:16:17.976"></status>
+</kw>
+<status status="FAIL" starttime="20180502 17:16:17.969" endtime="20180502 17:16:17.976"></status>
 </kw>
 <tags>
 <tag>functional</tag>
 </tags>
-<status status="PASS" starttime="20180430 23:44:52.578" endtime="20180430 23:45:14.661" critical="yes"></status>
+<status status="FAIL" starttime="20180502 17:16:06.468" endtime="20180502 17:16:17.976" critical="yes">'400.0 &gt;= 499.0' should be true.</status>
 </test>
-<test id="s1-t6" name="Disable Command - Cleanup">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Issue Disable Command.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:14.662" endtime="20180430 23:45:14.662"></status>
-</kw>
-<kw name="Issue Disable Command" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:45:14.662" endtime="20180430 23:45:26.156"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Disabled State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.157" endtime="20180430 23:45:26.157"></status>
-</kw>
-<kw name="Verify Summary State Event" library="common">
-<arguments>
-<arg>${SummaryDisabled}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every sub-State transition triggers a Summary State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.157" endtime="20180430 23:45:26.157"></status>
-</kw>
-<kw name="Get Event Summary State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:45:26.158" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:26.158" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7f0499613688&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:26.157" endtime="20180430 23:45:26.158"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:26.159" level="INFO">1</msg>
-<status status="PASS" starttime="20180430 23:45:26.158" endtime="20180430 23:45:26.159"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.159" endtime="20180430 23:45:26.159"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:26.159" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:26.159" endtime="20180430 23:45:26.159"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:45:26.157" endtime="20180430 23:45:26.159"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:45:14.661" endtime="20180430 23:45:26.160" critical="yes"></status>
-</test>
-<test id="s1-t7" name="Verify System Disabled Detailed State">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Disabled Detailed State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.160" endtime="20180430 23:45:26.160"></status>
-</kw>
-<kw name="Verify Detailed State Event" library="common">
-<arguments>
-<arg>${DetailedDisabled}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.161" endtime="20180430 23:45:26.161"></status>
-</kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:45:26.161" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:26.162" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f0499616880&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:26.161" endtime="20180430 23:45:26.162"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:26.162" level="INFO">1</msg>
-<status status="PASS" starttime="20180430 23:45:26.162" endtime="20180430 23:45:26.162"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.162" endtime="20180430 23:45:26.163"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:26.163" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:26.163" endtime="20180430 23:45:26.163"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:45:26.161" endtime="20180430 23:45:26.163"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:45:26.160" endtime="20180430 23:45:26.163" critical="yes"></status>
-</test>
-<test id="s1-t8" name="Standby Command - Cleanup">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Issue Standby Command.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:26.164" endtime="20180430 23:45:26.164"></status>
-</kw>
-<kw name="Issue Standby Command" library="atMonochromator_SAL">
-<status status="PASS" starttime="20180430 23:45:26.164" endtime="20180430 23:45:37.640"></status>
-</kw>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Standby State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.640" endtime="20180430 23:45:37.641"></status>
-</kw>
-<kw name="Verify Summary State Event" library="common">
-<arguments>
-<arg>${SummaryStandby}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every sub-State transition triggers a Summary State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.641" endtime="20180430 23:45:37.641"></status>
-</kw>
-<kw name="Get Event Summary State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:45:37.641" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:37.642" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7f04958eace0&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:37.641" endtime="20180430 23:45:37.642"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:37.642" level="INFO">5</msg>
-<status status="PASS" starttime="20180430 23:45:37.642" endtime="20180430 23:45:37.642"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.642" endtime="20180430 23:45:37.642"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.summaryState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:37.643" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:37.643" endtime="20180430 23:45:37.643"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:45:37.641" endtime="20180430 23:45:37.643"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:45:26.164" endtime="20180430 23:45:37.643" critical="yes"></status>
-</test>
-<test id="s1-t9" name="Verify System Standby Detailed State">
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Verify system enters Standby Detailed State.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.644" endtime="20180430 23:45:37.644"></status>
-</kw>
-<kw name="Verify Detailed State Event" library="common">
-<arguments>
-<arg>${DetailedStandby}</arg>
-</arguments>
-<kw name="Comment" library="BuiltIn">
-<doc>Displays the given messages in the log file as keyword arguments.</doc>
-<arguments>
-<arg>Every State transition triggers a Detailed State Event.</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.644" endtime="20180430 23:45:37.645"></status>
-</kw>
-<kw name="Get Event Detailed State" library="atMonochromator_SAL">
-<assign>
-<var>${valid}</var>
-<var>${data}</var>
-</assign>
-<msg timestamp="20180430 23:45:37.645" level="INFO">${valid} = True</msg>
-<msg timestamp="20180430 23:45:37.645" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_DetailedStateC object at 0x7f04958e3618&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:37.645" endtime="20180430 23:45:37.645"></status>
-</kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:37.645" level="INFO">5</msg>
-<status status="PASS" starttime="20180430 23:45:37.645" endtime="20180430 23:45:37.646"></status>
-</kw>
-<kw name="Should Be True" library="BuiltIn">
-<doc>Fails if the given condition is not true.</doc>
-<arguments>
-<arg>${valid}</arg>
-</arguments>
-<status status="PASS" starttime="20180430 23:45:37.646" endtime="20180430 23:45:37.646"></status>
-</kw>
-<kw name="Should Be Equal As Integers" library="BuiltIn">
-<doc>Fails if objects are unequal after converting them to integers.</doc>
-<arguments>
-<arg>${data.detailedState}</arg>
-<arg>${expectedState}</arg>
-</arguments>
-<msg timestamp="20180430 23:45:37.646" level="INFO">Argument types are:
-&lt;class 'int'&gt;
-&lt;type 'unicode'&gt;</msg>
-<status status="PASS" starttime="20180430 23:45:37.646" endtime="20180430 23:45:37.646"></status>
-</kw>
-<status status="PASS" starttime="20180430 23:45:37.644" endtime="20180430 23:45:37.646"></status>
-</kw>
-<tags>
-<tag>functional</tag>
-</tags>
-<status status="PASS" starttime="20180430 23:45:37.644" endtime="20180430 23:45:37.647" critical="yes"></status>
-</test>
-<doc>Monochromator State Commands tests.</doc>
-<status status="PASS" starttime="20180430 23:44:21.301" endtime="20180430 23:45:37.647"></status>
+<doc>Test invalid atMonochromator State transitions.</doc>
+<status status="FAIL" starttime="20180502 17:15:59.514" endtime="20180502 17:16:17.977"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="9" fail="0">Critical Tests</stat>
-<stat pass="9" fail="0">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
-<stat pass="9" fail="0">functional</stat>
+<stat pass="0" fail="1">functional</stat>
 </tag>
 <suite>
-<stat pass="9" fail="0" id="s1" name="StateCommands">StateCommands</stat>
+<stat pass="0" fail="1" id="s1" name="UpdateMonochromatorParemeters">UpdateMonochromatorParemeters</stat>
 </suite>
 </statistics>
 <errors>
