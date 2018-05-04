@@ -9,15 +9,15 @@ Resource    monochromator_helpers.robot
 Library    Library/atMonochromator_SAL.py
 
 *** Variables ***
-${delay}    0s
-${GRdelay}    0s
+${delay}    4s
+${GRdelay}    60s
 ${DeltaWavelength}    50
 ${MaxWavelengthGR2}    1200
 ${MaxWavelengthGR1}    650
 ${initWavelength}    400
 ${initSlitWidth}    0
 ${DeltaSlitWidth}    0.5
-${MaxSlitWidth}    8
+${MaxSlitWidth}    5.3
 
 *** Test Cases ***
 
@@ -49,7 +49,7 @@ From Enable Update Grating to set it to Blue and verify value
     Verify Grating Value	${GR} 
     Sleep    ${GRdelay} 
 
-From Enable Update Wavelength and verify value
+From Enable Update Wavelength in Blue Grating and verify value
     [Tags]    functional
     Comment    Update Wavelength.
     ${DW}=    Convert To Number    ${DeltaWavelength}
@@ -74,7 +74,7 @@ From Enable Update Grating to set it to Red and verify value
     Verify Grating Value	${GR} 
     Sleep    ${delay}
 
-From Enable Update Wavelength and verify value
+From Enable Update Wavelength in Red Grating and verify value
     [Tags]    functional
     Comment    Update Wavelength.
     ${DW}=    Convert To Number    ${DeltaWavelength}
@@ -162,7 +162,7 @@ From Enable Update Slit FrontExit Slit Width and verify value
     \    Log    ${slitWidth}
     \    Run Keyword and Continue on Failure    Issue Change Slit Width Command    ${slitNumber}    ${slitWidth}
     \    Run Keyword and Continue on Failure    Verify Slit Width Value	${slitNumber}	${slitWidth}
-    \    ${slitWidth}=    Evaluate   ${slitWidth} + ${DSlitWidth}WW
+    \    ${slitWidth}=    Evaluate   ${slitWidth} + ${DSlitWidth}
     \    Sleep    ${delay}
 
 ############ BEGIN Update All Test Checking All Wavelengths ############
@@ -183,6 +183,7 @@ From Enable Setup All Parameters in Blue Grating and verify value
     \    Run Keyword and Continue on Failure    Verify Two Slit Widths Value    ${FrontEntranceWidth}    ${FrontExitWidth}
     \    Run Keyword and Continue on Failure    Verify Grating Value    ${grating}
     \    Run Keyword and Continue on Failure    Verify Wavelength Value    ${Wavelength}
+    \    ${Wavelength}=    Evaluate   ${Wavelength} + ${DW}
     Sleep    ${delay}
 
 From Enable Setup All Parameters in Red Grating and verify value
@@ -201,6 +202,28 @@ From Enable Setup All Parameters in Red Grating and verify value
     \    Run Keyword and Continue on Failure    Verify Two Slit Widths Value    ${FrontEntranceWidth}    ${FrontExitWidth}
     \    Run Keyword and Continue on Failure    Verify Grating Value    ${grating}
     \    Run Keyword and Continue on Failure    Verify Wavelength Value    ${Wavelength}
+    \    ${Wavelength}=    Evaluate   ${Wavelength} + ${DW}
+    Sleep    ${delay}
+
+From Enable Setup All Parameters in Red Grating and verify value
+    [Tags]    functional
+    Comment    Update All parameters and verify all changed to right value.
+    ${slitNumber}=    Convert To Integer    ${FrontExit}
+    ${slitWidth}=    Convert To Number    ${initSlitWidth}
+    ${DSlitWidth}=    Convert To Number    ${DeltaSlitWidth}
+    ${MaxSlitWidth}=    Convert To Number    ${MaxSlitWidth}
+    ${grating}=    Convert To Integer    ${Red}
+    ${DW}=    Convert To Number    ${1}
+    ${Wavelength}=    Convert To Number    ${400}
+    :FOR    ${i}    IN RANGE    999999
+    \    Exit For Loop If    ${slitWidth} > ${MaxSlitWidth}
+    \    Log Many    Wavelength: ${Wavelength}    grating:${grating}    FrontExitWidth:${slitWidth}    FrontEntranceWidth:${slitWidth}
+    \    Run Keyword and Continue on Failure    Issue Update Monochromator Setup Command    ${grating}    ${slitWidth}    ${slitWidth}    ${Wavelength}
+    \    Run Keyword and Continue on Failure    Verify Two Slit Widths Value    ${slitWidth}    ${slitWidth}
+    \    Run Keyword and Continue on Failure    Verify Grating Value    ${grating}
+    \    Run Keyword and Continue on Failure    Verify Wavelength Value    ${Wavelength}
+    \    ${Wavelength}=    Evaluate   ${Wavelength} + ${DW}
+    \    ${slitWidth}=    Evaluate   ${slitWidth} + ${DSlitWidth}
     Sleep    ${delay}
 
 ############ Go to StandBy ############
