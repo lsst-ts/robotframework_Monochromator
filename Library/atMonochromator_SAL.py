@@ -317,7 +317,7 @@ class atMonochromator_SAL:
 		while retVal != 0 and timeout > time.time():
 			time.sleep(1)
 			retVal = self._SALatMonochromator.getEvent_SelectedGrating(data)
-		return retVal==0, data.gratingType
+		return retVal==0, data
 
 	def waitForNextSlitWidth(self, wait=300):
 		timeout = time.time() + float(wait)
@@ -326,7 +326,7 @@ class atMonochromator_SAL:
 		while retVal != 0 and timeout > time.time():
 			time.sleep(1)
 			retVal = self._SALatMonochromator.getEvent_SlitWidth(data)
-		return retVal==0, data.slit, data.slitWidth
+		return retVal==0, data
 
 	def waitForNextWavelength(self, wait=300):
 		timeout = time.time() + float(wait)
@@ -335,7 +335,7 @@ class atMonochromator_SAL:
 		while retVal != 0 and timeout > time.time():
 			time.sleep(1)
 			retVal = self._SALatMonochromator.getEvent_Wavelength(data)
-		return retVal==0, data.wavelength, data.timestamp
+		return retVal==0, data
 
 	def __del__(self):
 		self._SALatMonochromator.salShutdown()

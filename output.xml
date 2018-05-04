@@ -1,49 +1,816 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.0.dev1 (Python 3.6.3 on linux)" generated="20180504 11:46:18.860">
+<robot generator="Robot 3.1.0.dev1 (Python 3.6.3 on linux)" generated="20180504 17:01:57.236">
 <suite id="s1" name="UpdateMonochromatorParemeters" source="/home/andres/robotframework_Monochromator/UpdateMonochromatorParemeters.robot">
-<test id="s1-t1" name="From Enable Update SlitWidth and verify value">
+<test id="s1-t1" name="Start Command">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Issue Start Command.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:04.397" endtime="20180504 17:02:04.397"></status>
+</kw>
+<kw name="Issue Start Command" library="atMonochromator_SAL">
+<status status="PASS" starttime="20180504 17:02:04.397" endtime="20180504 17:02:15.817"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Verify system enters Disabled State.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:15.817" endtime="20180504 17:02:15.817"></status>
+</kw>
+<kw name="Verify Summary State Event" library="common">
+<arguments>
+<arg>${SummaryDisabled}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every sub-State transition triggers a Summary State Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:15.818" endtime="20180504 17:02:15.818"></status>
+</kw>
+<kw name="Get Event Summary State" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:02:15.818" level="INFO">${valid} = False</msg>
+<msg timestamp="20180504 17:02:15.818" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7fd38bd39b58&gt;</msg>
+<status status="PASS" starttime="20180504 17:02:15.818" endtime="20180504 17:02:15.818"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${data.summaryState}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:15.818" level="INFO">0</msg>
+<status status="PASS" starttime="20180504 17:02:15.818" endtime="20180504 17:02:15.819"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:15.819" level="FAIL">'False' should be true.</msg>
+<status status="FAIL" starttime="20180504 17:02:15.819" endtime="20180504 17:02:15.819"></status>
+</kw>
+<status status="FAIL" starttime="20180504 17:02:15.817" endtime="20180504 17:02:15.819"></status>
+</kw>
+<tags>
+<tag>functional</tag>
+</tags>
+<status status="FAIL" starttime="20180504 17:02:04.396" endtime="20180504 17:02:15.819" critical="yes">'False' should be true.</status>
+</test>
+<test id="s1-t2" name="Enable Command">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Issue Enable Command.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:15.820" endtime="20180504 17:02:15.820"></status>
+</kw>
+<kw name="Issue Enable Command" library="atMonochromator_SAL">
+<status status="PASS" starttime="20180504 17:02:15.820" endtime="20180504 17:02:27.233"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Verify system enters Enabled State.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:27.233" endtime="20180504 17:02:27.233"></status>
+</kw>
+<kw name="Verify Summary State Event" library="common">
+<arguments>
+<arg>${SummaryEnabled}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every sub-State transition triggers a Summary State Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:27.234" endtime="20180504 17:02:27.234"></status>
+</kw>
+<kw name="Get Event Summary State" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:02:27.234" level="INFO">${valid} = False</msg>
+<msg timestamp="20180504 17:02:27.234" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SummaryStateC object at 0x7fd38bd390a0&gt;</msg>
+<status status="PASS" starttime="20180504 17:02:27.234" endtime="20180504 17:02:27.234"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${data.summaryState}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:27.235" level="INFO">0</msg>
+<status status="PASS" starttime="20180504 17:02:27.234" endtime="20180504 17:02:27.235"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:27.235" level="FAIL">'False' should be true.</msg>
+<status status="FAIL" starttime="20180504 17:02:27.235" endtime="20180504 17:02:27.235"></status>
+</kw>
+<status status="FAIL" starttime="20180504 17:02:27.233" endtime="20180504 17:02:27.235"></status>
+</kw>
+<tags>
+<tag>functional</tag>
+</tags>
+<status status="FAIL" starttime="20180504 17:02:15.819" endtime="20180504 17:02:27.235" critical="yes">'False' should be true.</status>
+</test>
+<test id="s1-t3" name="From Enable Update Grating to set it to Blue and verify value">
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
 <arguments>
 <arg>Update Grating and verify value.</arg>
 </arguments>
-<status status="PASS" starttime="20180504 11:46:24.917" endtime="20180504 11:46:24.917"></status>
+<status status="PASS" starttime="20180504 17:02:27.236" endtime="20180504 17:02:27.236"></status>
 </kw>
-<kw name="Issue Change Slit Width Command" library="atMonochromator_SAL">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
 <arguments>
-<arg>2</arg>
-<arg>3</arg>
+<arg>${Blue}</arg>
 </arguments>
-<msg timestamp="20180504 11:46:24.918" level="FAIL">TypeError: (): incompatible function arguments. The following argument types are supported:
-    1. (self: SALPY_atMonochromator.atMonochromator_command_ChangeSlitWidthC, arg0: int) -&gt; None
-
-Invoked with: &lt;SALPY_atMonochromator.atMonochromator_command_ChangeSlitWidthC object at 0x7f2cbaf3d9d0&gt;, '2'</msg>
-<status status="FAIL" starttime="20180504 11:46:24.918" endtime="20180504 11:46:24.919"></status>
+<assign>
+<var>${GR}</var>
+</assign>
+<msg timestamp="20180504 17:02:27.237" level="INFO">${GR} = 1</msg>
+<status status="PASS" starttime="20180504 17:02:27.236" endtime="20180504 17:02:27.237"></status>
+</kw>
+<kw name="Issue Select Grating Command" library="atMonochromator_SAL">
+<arguments>
+<arg>${GR}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:27.237" endtime="20180504 17:02:38.621"></status>
+</kw>
+<kw name="Verify Grating Value" library="monochromator_helpers">
+<arguments>
+<arg>${GR}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every change in grating command triggers a grating Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.622" endtime="20180504 17:02:38.622"></status>
+</kw>
+<kw name="Wait For Next Selected Grating" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.622" level="INFO">${valid} = True</msg>
+<msg timestamp="20180504 17:02:38.622" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_SelectedGratingC object at 0x7fd38bd3e1f0&gt;</msg>
+<status status="PASS" starttime="20180504 17:02:38.622" endtime="20180504 17:02:38.622"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.623" endtime="20180504 17:02:38.623"></status>
+</kw>
+<kw name="Verify Rational Value" library="common">
+<doc>This keyword requires the name of the attribute, its value, and then the expected value, in that order.</doc>
+<arguments>
+<arg>Grating</arg>
+<arg>${data.gratingType}</arg>
+<arg>${expectedGrating}</arg>
+</arguments>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${value}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.624" level="INFO">${value} = 1.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.623" endtime="20180504 17:02:38.624"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${ExpectedValue}</arg>
+</arguments>
+<assign>
+<var>${ExpectedValue}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.624" level="INFO">${ExpectedValue} = 1.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.624" endtime="20180504 17:02:38.624"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Attribute: ${attribute}</arg>
+<arg>Value: ${value}</arg>
+<arg>Expected Value: ${ExpectedValue}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:38.625" level="INFO">Attribute: Grating</msg>
+<msg timestamp="20180504 17:02:38.625" level="INFO">Value: 1.0</msg>
+<msg timestamp="20180504 17:02:38.625" level="INFO">Expected Value: 1.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.624" endtime="20180504 17:02:38.625"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${value}</arg>
+<arg>${ExpectedValue}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.625" endtime="20180504 17:02:38.625"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:38.623" endtime="20180504 17:02:38.625"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:38.621" endtime="20180504 17:02:38.626"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${GRdelay}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:38.626" level="INFO">Slept 0 seconds</msg>
+<status status="PASS" starttime="20180504 17:02:38.626" endtime="20180504 17:02:38.626"></status>
 </kw>
 <tags>
 <tag>functional</tag>
 </tags>
-<status status="FAIL" starttime="20180504 11:46:24.917" endtime="20180504 11:46:24.919" critical="yes">TypeError: (): incompatible function arguments. The following argument types are supported:
-    1. (self: SALPY_atMonochromator.atMonochromator_command_ChangeSlitWidthC, arg0: int) -&gt; None
-
-Invoked with: &lt;SALPY_atMonochromator.atMonochromator_command_ChangeSlitWidthC object at 0x7f2cbaf3d9d0&gt;, '2'</status>
+<status status="PASS" starttime="20180504 17:02:27.235" endtime="20180504 17:02:38.626" critical="yes"></status>
 </test>
-<doc>Test invalid atMonochromator State transitions.</doc>
-<status status="FAIL" starttime="20180504 11:46:18.861" endtime="20180504 11:46:24.919"></status>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
-</total>
-<tag>
-<stat pass="0" fail="1">functional</stat>
-</tag>
-<suite>
-<stat pass="0" fail="1" id="s1" name="UpdateMonochromatorParemeters">UpdateMonochromatorParemeters</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20180504 11:46:24.913" level="ERROR">Error in resource file '/home/andres/robotframework_Monochromator/monochromator_helpers.robot': Creating keyword 'Verify Slit Width Value' failed: Invalid argument specification: Invalid argument syntax '${expectedSlit} ${expectedSlitWidth}'.</msg>
-</errors>
-</robot>
+<test id="s1-t4" name="From Enable Update Wavelength and verify value">
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Update Wavelength.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.627" endtime="20180504 17:02:38.627"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${DeltaWavelength}</arg>
+</arguments>
+<assign>
+<var>${DW}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.628" level="INFO">${DW} = 50.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.627" endtime="20180504 17:02:38.628"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${initWavelength}</arg>
+</arguments>
+<assign>
+<var>${Wavelength}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.628" level="INFO">${Wavelength} = 400.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.628" endtime="20180504 17:02:38.628"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${MaxWavelengthGR1}</arg>
+</arguments>
+<assign>
+<var>${MaxValue}</var>
+</assign>
+<msg timestamp="20180504 17:02:38.629" level="INFO">${MaxValue} = 650.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.629" endtime="20180504 17:02:38.629"></status>
+</kw>
+<kw name="${i} IN RANGE [ 999999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${Wavelength} &gt; ${MaxValue}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.655" endtime="20180504 17:02:38.655"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:38.656" level="INFO">400.0</msg>
+<status status="PASS" starttime="20180504 17:02:38.655" endtime="20180504 17:02:38.656"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Issue Change Wavelength Command</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Issue Change Wavelength Command" library="atMonochromator_SAL">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:38.682" endtime="20180504 17:02:50.076"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:38.656" endtime="20180504 17:02:50.076"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Verify Wavelength Value</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Verify Wavelength Value" library="monochromator_helpers">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every change wavelength command triggers a wavelength Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.077" endtime="20180504 17:02:50.077"></status>
+</kw>
+<kw name="Wait For Next Wavelength" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.077" level="INFO">${valid} = True</msg>
+<msg timestamp="20180504 17:02:50.078" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_WavelengthC object at 0x7fd38bd3e490&gt;</msg>
+<status status="PASS" starttime="20180504 17:02:50.077" endtime="20180504 17:02:50.078"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.078" endtime="20180504 17:02:50.078"></status>
+</kw>
+<kw name="Verify Irrational Value" library="common">
+<doc>This keyword requires the name of the attribute, its value, the tolerance and then the expected value, in that order.</doc>
+<arguments>
+<arg>Wavelength</arg>
+<arg>${data.wavelength}</arg>
+<arg>${wavelengthTol}</arg>
+<arg>${expectedWavelgength}</arg>
+</arguments>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${value}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.079" level="INFO">${value} = 400.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.078" endtime="20180504 17:02:50.079"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${ExpectedValue}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${ExpectedValue}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.079" level="INFO">${ExpectedValue} = 400.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.079" endtime="20180504 17:02:50.079"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Attribute: ${attribute}</arg>
+<arg>Value: ${value}</arg>
+<arg>Tolerance: ${tolerance}</arg>
+<arg>Expected Value: ${ExpectedValue}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:50.079" level="INFO">Attribute: Wavelength</msg>
+<msg timestamp="20180504 17:02:50.080" level="INFO">Value: 400.0</msg>
+<msg timestamp="20180504 17:02:50.080" level="INFO">Tolerance: 1</msg>
+<msg timestamp="20180504 17:02:50.080" level="INFO">Expected Value: 400.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.079" endtime="20180504 17:02:50.080"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} + ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${high}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.080" level="INFO">${high} = 401.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.080" endtime="20180504 17:02:50.080"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} - ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${low}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.081" level="INFO">${low} = 399.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.080" endtime="20180504 17:02:50.081"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &lt;= ${high}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.081" endtime="20180504 17:02:50.081"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &gt;= ${low}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.081" endtime="20180504 17:02:50.082"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:50.078" endtime="20180504 17:02:50.082"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:50.077" endtime="20180504 17:02:50.082"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:50.076" endtime="20180504 17:02:50.082"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Wavelength} + ${DW}</arg>
+</arguments>
+<assign>
+<var>${Wavelength}</var>
+</assign>
+<msg timestamp="20180504 17:02:50.082" level="INFO">${Wavelength} = 450.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.082" endtime="20180504 17:02:50.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:50.083" level="INFO">Slept 0 seconds</msg>
+<status status="PASS" starttime="20180504 17:02:50.083" endtime="20180504 17:02:50.083"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:38.654" endtime="20180504 17:02:50.083"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${Wavelength} &gt; ${MaxValue}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.083" endtime="20180504 17:02:50.083"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<msg timestamp="20180504 17:02:50.084" level="INFO">450.0</msg>
+<status status="PASS" starttime="20180504 17:02:50.083" endtime="20180504 17:02:50.084"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Issue Change Wavelength Command</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Issue Change Wavelength Command" library="atMonochromator_SAL">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:02:50.084" endtime="20180504 17:03:01.540"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:50.084" endtime="20180504 17:03:01.540"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Verify Wavelength Value</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Verify Wavelength Value" library="monochromator_helpers">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every change wavelength command triggers a wavelength Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.541" endtime="20180504 17:03:01.541"></status>
+</kw>
+<kw name="Wait For Next Wavelength" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.542" level="INFO">${valid} = True</msg>
+<msg timestamp="20180504 17:03:01.542" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_WavelengthC object at 0x7fd38aa4aae8&gt;</msg>
+<status status="PASS" starttime="20180504 17:03:01.541" endtime="20180504 17:03:01.542"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.542" endtime="20180504 17:03:01.542"></status>
+</kw>
+<kw name="Verify Irrational Value" library="common">
+<doc>This keyword requires the name of the attribute, its value, the tolerance and then the expected value, in that order.</doc>
+<arguments>
+<arg>Wavelength</arg>
+<arg>${data.wavelength}</arg>
+<arg>${wavelengthTol}</arg>
+<arg>${expectedWavelgength}</arg>
+</arguments>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${value}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.543" level="INFO">${value} = 450.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.543" endtime="20180504 17:03:01.543"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${ExpectedValue}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${ExpectedValue}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.543" level="INFO">${ExpectedValue} = 450.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.543" endtime="20180504 17:03:01.543"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Attribute: ${attribute}</arg>
+<arg>Value: ${value}</arg>
+<arg>Tolerance: ${tolerance}</arg>
+<arg>Expected Value: ${ExpectedValue}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:01.544" level="INFO">Attribute: Wavelength</msg>
+<msg timestamp="20180504 17:03:01.544" level="INFO">Value: 450.0</msg>
+<msg timestamp="20180504 17:03:01.544" level="INFO">Tolerance: 1</msg>
+<msg timestamp="20180504 17:03:01.544" level="INFO">Expected Value: 450.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.544" endtime="20180504 17:03:01.544"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} + ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${high}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.544" level="INFO">${high} = 451.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.544" endtime="20180504 17:03:01.545"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} - ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${low}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.545" level="INFO">${low} = 449.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.545" endtime="20180504 17:03:01.545"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &lt;= ${high}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.545" endtime="20180504 17:03:01.546"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &gt;= ${low}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.546" endtime="20180504 17:03:01.546"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:01.542" endtime="20180504 17:03:01.546"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:01.541" endtime="20180504 17:03:01.546"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:01.540" endtime="20180504 17:03:01.546"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Wavelength} + ${DW}</arg>
+</arguments>
+<assign>
+<var>${Wavelength}</var>
+</assign>
+<msg timestamp="20180504 17:03:01.546" level="INFO">${Wavelength} = 500.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.546" endtime="20180504 17:03:01.547"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:01.547" level="INFO">Slept 0 seconds</msg>
+<status status="PASS" starttime="20180504 17:03:01.547" endtime="20180504 17:03:01.547"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:02:50.083" endtime="20180504 17:03:01.547"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${Wavelength} &gt; ${MaxValue}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.547" endtime="20180504 17:03:01.548"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:01.548" level="INFO">500.0</msg>
+<status status="PASS" starttime="20180504 17:03:01.548" endtime="20180504 17:03:01.548"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Issue Change Wavelength Command</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Issue Change Wavelength Command" library="atMonochromator_SAL">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:01.548" endtime="20180504 17:03:13.043"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:01.548" endtime="20180504 17:03:13.043"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Verify Wavelength Value</arg>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Verify Wavelength Value" library="monochromator_helpers">
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>Every change wavelength command triggers a wavelength Event.</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:13.044" endtime="20180504 17:03:13.044"></status>
+</kw>
+<kw name="Wait For Next Wavelength" library="atMonochromator_SAL">
+<assign>
+<var>${valid}</var>
+<var>${data}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.044" level="INFO">${valid} = True</msg>
+<msg timestamp="20180504 17:03:13.044" level="INFO">${data} = &lt;SALPY_atMonochromator.atMonochromator_logevent_WavelengthC object at 0x7fd38bd3ee68&gt;</msg>
+<status status="PASS" starttime="20180504 17:03:13.044" endtime="20180504 17:03:13.044"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${valid}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:13.044" endtime="20180504 17:03:13.045"></status>
+</kw>
+<kw name="Verify Irrational Value" library="common">
+<doc>This keyword requires the name of the attribute, its value, the tolerance and then the expected value, in that order.</doc>
+<arguments>
+<arg>Wavelength</arg>
+<arg>${data.wavelength}</arg>
+<arg>${wavelengthTol}</arg>
+<arg>${expectedWavelgength}</arg>
+</arguments>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${value}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.045" level="INFO">${value} = 500.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.045" endtime="20180504 17:03:13.045"></status>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<doc>Converts the given item to a floating point number.</doc>
+<arguments>
+<arg>${ExpectedValue}</arg>
+<arg>${4}</arg>
+</arguments>
+<assign>
+<var>${ExpectedValue}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.046" level="INFO">${ExpectedValue} = 500.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.046" endtime="20180504 17:03:13.046"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Attribute: ${attribute}</arg>
+<arg>Value: ${value}</arg>
+<arg>Tolerance: ${tolerance}</arg>
+<arg>Expected Value: ${ExpectedValue}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:13.046" level="INFO">Attribute: Wavelength</msg>
+<msg timestamp="20180504 17:03:13.046" level="INFO">Value: 500.0</msg>
+<msg timestamp="20180504 17:03:13.046" level="INFO">Tolerance: 1</msg>
+<msg timestamp="20180504 17:03:13.046" level="INFO">Expected Value: 500.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.046" endtime="20180504 17:03:13.046"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} + ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${high}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.047" level="INFO">${high} = 501.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.046" endtime="20180504 17:03:13.047"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${ExpectedValue} - ${tolerance}</arg>
+</arguments>
+<assign>
+<var>${low}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.047" level="INFO">${low} = 499.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.047" endtime="20180504 17:03:13.047"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &lt;= ${high}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:13.047" endtime="20180504 17:03:13.048"></status>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${value} &gt;= ${low}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:13.048" endtime="20180504 17:03:13.048"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:13.045" endtime="20180504 17:03:13.048"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:13.043" endtime="20180504 17:03:13.048"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:13.043" endtime="20180504 17:03:13.048"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${Wavelength} + ${DW}</arg>
+</arguments>
+<assign>
+<var>${Wavelength}</var>
+</assign>
+<msg timestamp="20180504 17:03:13.048" level="INFO">${Wavelength} = 550.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.048" endtime="20180504 17:03:13.048"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${delay}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:13.049" level="INFO">Slept 0 seconds</msg>
+<status status="PASS" starttime="20180504 17:03:13.049" endtime="20180504 17:03:13.049"></status>
+</kw>
+<status status="PASS" starttime="20180504 17:03:01.547" endtime="20180504 17:03:13.049"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${Wavelength} &gt; ${MaxValue}</arg>
+</arguments>
+<status status="PASS" starttime="20180504 17:03:13.049" endtime="20180504 17:03:13.049"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Wavelength}</arg>
+</arguments>
+<msg timestamp="20180504 17:03:13.050" level="INFO">550.0</msg>
+<status status="PASS" starttime="20180504 17:03:13.049" endtime="20180504 17:03:13.050"></status>

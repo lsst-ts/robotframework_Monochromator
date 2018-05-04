@@ -79,3 +79,436 @@ Node        : localhost.localdomain
 Process     : python3.6 <5154>
 Thread      : durability 7f464355e700
 Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525286914.839296396
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : main thread 7fc638965740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525450249.515342091
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : spliced 7fc63897a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525450249.520084888
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : spliced 7fc63897a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525450249.524319503
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : spliced 7fc63897a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525450249.525257946
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : ddsi2 7fc62d412700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525450249.531941892
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:49 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : ddsi2 7fc62d412700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525450249.535305614
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:50 EDT 2018
+Description : The durability service can by identified by ID: 1444514219
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : durability 7fc62d784700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525450250.337835285
+========================================================================================
+Report      : INFO
+Date        : Fri May 04 12:10:56 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : durability 7fc62d784700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525450256.464254661
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:13:41 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1594538635. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450421.607909097
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:14:17 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1421944476. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450457.611456888
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:14:45 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 714390307. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450485.621082265
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:15:53 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 43058156. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450553.635673617
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:20:37 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 2033559937. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450837.740549706
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:20:59 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 236476181. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450859.753204388
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:21:57 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 274026583. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450917.757496713
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:22:15 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1698857290. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450935.765895312
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:22:45 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1209991364. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525450965.767781108
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:24:17 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1146307356. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525451057.795506030
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 12:32:15 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 2048539273. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525451535.925682943
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:28:32 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 533646799. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525454912.862535955
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:33:34 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1703471067. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455214.951805702
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:34:24 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 187335829. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455264.986151500
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:34:52 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1466596051. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455292.975775115
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:35:05 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : recv 7fc62d071700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525455305.758103025
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:35:05 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : recv 7fc62d071700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525455305.758137252
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:35:24 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 104570156. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455324.989745587
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:36:11 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 919034231. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455371.012058865
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:37:05 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 2100163963. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455425.017549685
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:37:27 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1390379783. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455447.030308804
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:38:55 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1997068185. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455535.074915511
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:43:21 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1213194817. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455801.131615291
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:46:21 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1721626400. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525455981.168860719
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:48:09 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1555617570. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456089.206901733
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:49:59 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1397917041. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456199.275454788
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:51:01 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1959289436. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456261.276729985
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:51:59 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 970171102. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456319.316258325
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:52:41 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1470584054. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456361.308855692
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:53:55 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1035036911. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456435.330962493
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:54:37 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 2143382047. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456477.338350097
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:55:35 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 16260054. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456535.371509235
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 13:59:53 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 475510993. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456793.439187117
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:00:33 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 293864611. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456833.434095062
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:01:13 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 902654413. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456873.446599260
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:02:25 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 916809390. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456945.480271161
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:03:07 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 170190404. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525456987.479630657
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:03:51 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 836248530. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525457031.497418907
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:05:25 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 660560627. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525457125.530229534
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:07:51 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 506806079. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525457271.560128122
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:09:19 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1066177098. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525457359.598547749
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:10:35 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 699729220. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525457435.618452771
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:22:23 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 98836226. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525458143.918106612
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 14:32:06 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 454631356. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <15052>
+Thread      : OSPL Garbage Collector 7fc62da74700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525458726.058254765
