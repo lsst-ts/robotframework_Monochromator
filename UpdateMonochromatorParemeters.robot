@@ -10,7 +10,7 @@ Library    Library/atMonochromator_SAL.py
 
 *** Variables ***
 ${delay}    4s
-${GRdelay}    60s
+${GRdelay}    30s
 ${DeltaWavelength}    50
 ${MaxWavelengthGR2}    1200
 ${MaxWavelengthGR1}    650

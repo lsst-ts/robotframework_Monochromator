@@ -9005,3 +9005,1981 @@ Node        : localhost.localdomain
 Process     : python3.6 <26335>
 Thread      : durability 7f8a381e3700
 Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525474292.516043422
+========================================================================================
+Report      : WARNING
+Date        : Fri May 04 20:09:07 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1739247640. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : OSPL Garbage Collector 7f8a38275700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525478947.779569093
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Processing of lease 0x7f8a00001990 is behind schedule; expiry-time=1525479256.198154968s and lag=61286.730948808s (actionId=1 and duration=10.000000000s). Assuming resuming after hibernate...
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : watchdog 7f8a3cca3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_leaseManager/v_leaseManager.c/775/0/1525540542.929123202
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Processing of lease 0x7f8a08001b20 is behind schedule; expiry-time=1525479254.622656250s and lag=61288.306447526s (actionId=1 and duration=10.000000000s). Assuming resuming after hibernate...
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : watchdog 7f8a3cca3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_leaseManager/v_leaseManager.c/775/0/1525540542.929602814
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Processing of lease 0x7f8a2c00a6d0 is behind schedule; expiry-time=1525479247.879256343s and lag=61295.049847433s (actionId=6 and duration=2.000000000s). This is often an indication that the machine is too busy. The lease manager will continue to function normally.
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : watchdog 7f8a3cca3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_leaseManager/v_leaseManager.c/795/0/1525540542.929621083
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Processing of lease 0x7f8a2c00a740 is behind schedule; expiry-time=1525479247.879231949s and lag=61295.049871827s (actionId=5 and duration=2.000000000s). This is often an indication that the machine is too busy. The lease manager will continue to function normally.
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : watchdog 7f8a3cca3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_leaseManager/v_leaseManager.c/795/0/1525540542.929633253
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Processing of lease 0x7f8a2c093d10 is behind schedule; expiry-time=1525479255.879188799s and lag=61287.049914977s (actionId=1 and duration=10.000000000s). Assuming resuming after hibernate...
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : watchdog 7f8a3cca3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_leaseManager/v_leaseManager.c/775/0/1525540542.929645046
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:15:42 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1527943339. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : OSPL Garbage Collector 7f8a38275700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525540542.941059060
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:17:16 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : recv 7f8a1b8c8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525540636.357921103
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:17:16 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : recv 7f8a1b8c8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525540636.358205608
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:21:43 EDT 2018
+Description : Termination request (signal 2) received from PID 26335 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : signalHandler 7f8a38a16700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525540903.860799688
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:21:44 EDT 2018
+Description : Termination request (signal 2) received from PID 26335 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <26335>
+Thread      : signalHandler 7f8a38a16700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525540904.224350912
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:34 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : main thread 7f4bf50f3740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541074.985856771
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:34 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : spliced 7f4bf4f32700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541074.987694285
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:34 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : spliced 7f4bf4f32700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541074.991345546
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:34 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : spliced 7f4bf4f32700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541074.992216995
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:24:34 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : ddsi2 7f4bc7fff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541074.998494343
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:35 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : ddsi2 7f4bc7fff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541075.000975112
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:35 EDT 2018
+Description : The durability service can by identified by ID: 1362912038
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : durability 7f4be440f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541075.804177990
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:24:42 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : durability 7f4be440f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541082.925995823
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:25 EDT 2018
+Description : Termination request (signal 2) received from PID 28232 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28232>
+Thread      : signalHandler 7f4be4ea0700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541125.993682634
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : main thread 7f218e530740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541126.879116780
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : spliced 7f218e36f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541126.880276459
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : spliced 7f218e36f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541126.884026164
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : spliced 7f218e36f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541126.884684212
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : ddsi2 7f217d4da700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541126.887298893
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:26 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : ddsi2 7f217d4da700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541126.894587469
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:27 EDT 2018
+Description : The durability service can by identified by ID: 1708337445
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : durability 7f217d84c700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541127.698221204
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:31 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541131.877088527
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:32 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541132.042600316
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:32 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541132.170764541
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:32 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541132.299129851
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:32 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541132.427121005
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : Termination request (signal 2) received from PID 28288 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28288>
+Thread      : signalHandler 7f217e2dd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541133.113453587
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : main thread 7fb8aa855740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541133.712496195
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : spliced 7fb8aa694700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541133.713769217
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : spliced 7fb8aa694700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541133.718571051
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : spliced 7fb8aa694700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541133.719232271
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : ddsi2 7fb8997ff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541133.725212484
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:33 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : ddsi2 7fb8997ff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541133.727692093
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:34 EDT 2018
+Description : The durability service can by identified by ID: 1558773486
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : durability 7fb899b71700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541134.436851085
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:40 EDT 2018
+Description : Termination request (signal 2) received from PID 28337 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28337>
+Thread      : signalHandler 7fb89a602700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541140.631257671
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : main thread 7f912386b740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541141.208566481
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : spliced 7f91236aa700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541141.209865508
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : spliced 7f91236aa700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541141.213616987
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : spliced 7f91236aa700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541141.214966427
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : ddsi2 7f9112815700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541141.216796578
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : ddsi2 7f9112815700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541141.219874228
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541141.510389639
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:42 EDT 2018
+Description : The durability service can by identified by ID: 1401763841
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : durability 7f9112b87700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541142.128649151
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:42 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541142.148169224
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:42 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541142.942492738
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:43 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541143.108095569
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:43 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541143.209001455
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:43 EDT 2018
+Description : Termination request (signal 2) received from PID 28385 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : signalHandler 7f9113618700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541143.364130528
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28385>
+Thread      : durability 7f9112b87700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541149.369091772
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : main thread 7f5f112a7740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541149.849431177
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : spliced 7f5f110e6700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541149.851087763
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : spliced 7f5f110e6700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541149.854921993
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : spliced 7f5f110e6700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541149.855450962
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : ddsi2 7f5f00251700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541149.856760591
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:49 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : ddsi2 7f5f00251700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541149.863782763
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:50 EDT 2018
+Description : The durability service can by identified by ID: 2058779389
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : durability 7f5f005c3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541150.677509408
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:25:56 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : durability 7f5f005c3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541156.922775844
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:26:05 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1401763841. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : OSPL Garbage Collector 7f5f008b3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525541165.878566956
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : Termination request (signal 2) received from PID 28433 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : signalHandler 7f5f01054700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541200.188681543
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : Termination request (signal 2) received from PID 28433 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28433>
+Thread      : signalHandler 7f5f01054700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541200.349480949
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : main thread 7fa736f89740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541200.987053481
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : spliced 7fa736dc8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541200.988622766
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : spliced 7fa736dc8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541200.992765042
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541200.993211642
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : spliced 7fa736dc8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541200.993686558
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : ddsi2 7fa725f33700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541200.995785668
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:40 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : ddsi2 7fa725f33700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541200.998473183
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.107421691
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.235495182
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.358468151
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.491624009
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.625276885
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541201.860316667
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:41 EDT 2018
+Description : The durability service can by identified by ID: 2090284370
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : durability 7fa7262a5700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541201.909469510
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:42 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541202.244462407
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:42 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541202.372538050
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:42 EDT 2018
+Description : Termination request (signal 2) received from PID 28492 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541202.506149338
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:47 EDT 2018
+Description : Termination request (signal 1) received from PID 9915, UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <28492>
+Thread      : signalHandler 7fa726d36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525541207.793556218
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : main thread 7fd278925740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525541218.126728619
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : spliced 7fd278764700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525541218.128236016
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : spliced 7fd278764700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525541218.132019683
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : spliced 7fd278764700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541218.133233246
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : ddsi2 7fd25b8ac700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525541218.137511266
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : ddsi2 7fd25b8ac700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541218.139862271
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:26:58 EDT 2018
+Description : The durability service can by identified by ID: 1437477871
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : durability 7fd25bc1e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525541218.947002450
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:27:06 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <28615>
+Thread      : durability 7fd25bc1e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525541226.065682173
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : main thread 7f3aea46c740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525543027.832606588
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : spliced 7f3aea2ab700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525543027.833899839
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : spliced 7f3aea2ab700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525543027.837585292
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : spliced 7f3aea2ab700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525543027.839076660
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : ddsi2 7f3ad9416700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525543027.841817869
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:07 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : ddsi2 7f3ad9416700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525543027.845825677
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:08 EDT 2018
+Description : The durability service can by identified by ID: 222293942
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : durability 7f3ad9788700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525543028.654052027
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 13:57:14 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : durability 7f3ad9788700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525543034.876640765
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 13:57:23 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1437477871. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : OSPL Garbage Collector 7f3ad9a78700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525543043.859923933
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 14:40:20 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : recv 7f3ad90d8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525545620.811994602
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 14:40:20 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <29105>
+Thread      : recv 7f3ad90d8700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525545620.812051818
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : main thread 7fbbf4d43740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525546949.773618883
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : spliced 7fbbf4b82700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525546949.775371081
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : spliced 7fbbf4b82700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525546949.779181612
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : spliced 7fbbf4b82700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525546949.779705125
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : ddsi2 7fbbbbc8d700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525546949.784627109
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:29 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : ddsi2 7fbbbbc8d700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525546949.789881517
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:30 EDT 2018
+Description : The durability service can by identified by ID: 421166907
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : durability 7fbbbbfff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525546950.595097008
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 15:02:36 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : durability 7fbbbbfff700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525546956.818006654
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 15:02:45 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 222293942. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : OSPL Garbage Collector 7fbbe434f700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525546965.802104827
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 15:45:59 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : recv 7fbbbb9a4700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525549559.511001877
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 15:45:59 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <29968>
+Thread      : recv 7fbbbb9a4700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525549559.511042125
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : main thread 7fcedb734740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525550871.180331749
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : spliced 7fcedb573700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525550871.181510926
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : spliced 7fcedb573700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525550871.185220501
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : spliced 7fcedb573700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525550871.186630184
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : ddsi2 7fceca6cd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525550871.194768053
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:51 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : ddsi2 7fceca6cd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525550871.197940746
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:52 EDT 2018
+Description : The durability service can by identified by ID: 993730362
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : durability 7fcecaa50700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525550872.001639669
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 16:07:59 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : durability 7fcecaa50700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525550879.230270118
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 16:08:07 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 421166907. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : OSPL Garbage Collector 7fcecad40700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525550887.195794192
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 16:51:10 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : recv 7fceca37e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525553470.111246609
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 16:51:10 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <30795>
+Thread      : recv 7fceca37e700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525553470.111292583
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : main thread 7f02479f8740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525554792.512683834
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : spliced 7f0247837700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525554792.513793252
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : spliced 7f0247837700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525554792.517797899
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : spliced 7f0247837700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525554792.518433618
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : ddsi2 7f02369a2700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525554792.522113628
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:12 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : ddsi2 7f02369a2700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525554792.526264125
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:13 EDT 2018
+Description : The durability service can by identified by ID: 1276204643
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : durability 7f0236d14700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525554793.330642155
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 17:13:19 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : durability 7f0236d14700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525554799.544727128
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 17:13:28 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 993730362. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : OSPL Garbage Collector 7f0237004700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525554808.524319709
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 17:56:45 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : recv 7f0236664700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525557405.809887119
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 17:56:45 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <31673>
+Thread      : recv 7f0236664700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525557405.809946336
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : main thread 7fdc79b1e740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525558712.282846223
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : spliced 7fdc7995d700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525558712.284257190
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : spliced 7fdc7995d700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525558712.287761806
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : spliced 7fdc7995d700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525558712.288724985
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : ddsi2 7fdc68a95700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525558712.297273993
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:32 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : ddsi2 7fdc68a95700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525558712.300174165
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:33 EDT 2018
+Description : The durability service can by identified by ID: 1466222862
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : durability 7fdc68e3a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525558713.201834242
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:18:39 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : durability 7fdc68e3a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525558719.430102831
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 18:18:48 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1276204643. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <32497>
+Thread      : OSPL Garbage Collector 7fdc6912a700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525558728.295711550
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : main thread 7f3c1d82a740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525560354.751594537
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : spliced 7f3c1d669700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525560354.753584956
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : spliced 7f3c1d669700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525560354.757737378
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : spliced 7f3c1d669700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525560354.758895589
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : ddsi2 7f3c0c7a1700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525560354.768875269
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:54 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : ddsi2 7f3c0c7a1700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525560354.773556114
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:45:55 EDT 2018
+Description : The durability service can by identified by ID: 509932224
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : durability 7f3c0cb46700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525560355.577864391
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 18:46:01 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : durability 7f3c0cb46700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525560361.801715531
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 18:46:10 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 1466222862. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : OSPL Garbage Collector 7f3c0ce36700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525560370.770570928
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 19:28:49 EDT 2018
+Description : The number of samples per instance '5000' has surpassed the warning level of '5000' samples per instance.
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : recv 7f3c0c496700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesPerInstanceWarningLevel/v_kernel.c/1151/0/1525562929.509570573
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 19:28:49 EDT 2018
+Description : The number of samples '5000' has surpassed the warning level of '5000' samples.
+Node        : localhost.localdomain
+Process     : python3.6 <486>
+Thread      : recv 7f3c0c496700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_checkMaxSamplesWarningLevel/v_kernel.c/1134/0/1525562929.509610269
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : main thread 7f6f998d7740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525564279.574562598
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : spliced 7f6f99716700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525564279.576021696
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : spliced 7f6f99716700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525564279.579895841
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : spliced 7f6f99716700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525564279.581184867
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : ddsi2 7f6f88881700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525564279.587873276
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:19 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : ddsi2 7f6f88881700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525564279.591241643
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:20 EDT 2018
+Description : The durability service can by identified by ID: 789639610
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : durability 7f6f88bf3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525564280.394019135
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 19:51:27 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : durability 7f6f88bf3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525564287.616907605
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 19:51:35 EDT 2018
+Description : Missed heartbeat for node - heartbeat id : 509932224. (DCPSPublication state 1)
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : OSPL Garbage Collector 7f6f88ee3700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_spliced/v_spliced.c/2439/0/1525564295.606971816
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 20:07:07 EDT 2018
+Description : Termination request (signal 1) received from PID 28543, UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <1492>
+Thread      : signalHandler 7f6f89684700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525565227.150589834
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : main thread 7f763518e740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525571223.512503774
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : spliced 7f7634fcd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525571223.514065727
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : spliced 7f7634fcd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525571223.517904918
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : spliced 7f7634fcd700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571223.518974676
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : ddsi2 7f7624105700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525571223.524625656
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:03 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : ddsi2 7f7624105700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571223.527189277
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:04 EDT 2018
+Description : The durability service can by identified by ID: 606759136
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : durability 7f76244aa700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525571224.237994559
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:10 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : durability 7f76244aa700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571230.351127692
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:34 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571254.744752304
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:34 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571254.915786974
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:35 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571255.070312005
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:35 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571255.198440936
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:35 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571255.326622562
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:35 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571255.457304332
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:38 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571258.365185207
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:38 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571258.546990714
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:38 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571258.674795943
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:38 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571258.835148685
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:38 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571258.968840409
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.107405067
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.230433981
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.373945857
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.576702833
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.715539024
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:39 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571259.854123970
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.003468613
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.142222541
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.323679099
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.463215997
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.633497098
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.804041786
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:40 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571260.953454604
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.092169804
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.241596366
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.439638585
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.593878059
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.780536521
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:41 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571261.962260862
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:42 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571262.132832871
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:47:42 EDT 2018
+Description : Termination request (signal 2) received from PID 3465 (self), UID 1000
+Node        : localhost.localdomain
+Process     : python3.6 <3465>
+Thread      : signalHandler 7f7624f3b700
+Internals   : V6.4.140320OSS/24b1387/24b1387/signalHandlerThread/os_signalHandler.c/503/0/1525571262.276913999
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : Not installing a signal handler for the already ignored signal 13.
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : main thread 7f86fa21a740
+Internals   : V6.4.140320OSS/24b1387/24b1387/os_signalHandlerThread/os_signalHandler.c/793/0/1525571368.705727307
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : u_domainNew:Database allocated on heap
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : spliced 7f86fa059700
+Internals   : V6.4.140320OSS/24b1387/24b1387/user::u_domain::u_domainNew/u_domain.c/706/0/1525571368.707099897
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : ---------------------------------------------------------------
+              -- The service is using the following configuration settings --
+              ---------------------------------------------------------------
+              Domain (id)          : ospl_sp_ddsi (0)
+              Storage              : 10240 Kbytes
+              Storage threshold    : 1024 Kbytes
+              Storage address      : Not available
+              Locking              : default
+              Memory mode          : Heap memory
+              Builtin topics       : true
+              Priority inheritance : false
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : spliced 7f86fa059700
+Internals   : V6.4.140320OSS/24b1387/24b1387/The OpenSplice domain service/u_domain.c/827/0/1525571368.710907858
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'splicedaemon' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : spliced 7f86fa059700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571368.712317226
+========================================================================================
+Report      : WARNING
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : using network interface enp0s3 (10.0.2.15) selected arbitrarily from: enp0s3, virbr0
+
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : ddsi2 7f86e91c4700
+Internals   : V6.4.140320OSS/24b1387/24b1387/ddsi2/q_nwif.c/668/0/1525571368.716978987
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:28 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'ddsi2' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : ddsi2 7f86e91c4700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571368.720090388
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:29 EDT 2018
+Description : The durability service can by identified by ID: 1208323786
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : durability 7f86e9536700
+Internals   : V6.4.140320OSS/24b1387/24b1387/DurabilityService/d_durability.c/476/0/1525571369.623398796
+========================================================================================
+Report      : INFO
+Date        : Sat May 05 21:49:39 EDT 2018
+Description : ++++++++++++++++++++++++++++++++++++++++++++++++
+              ++ The service 'durability' is now operational. 
+              ++++++++++++++++++++++++++++++++++++++++++++++++
+Node        : localhost.localdomain
+Process     : python3.6 <3563>
+Thread      : durability 7f86e9536700
+Internals   : V6.4.140320OSS/24b1387/24b1387/v_serviceChangeState/v_service.c/329/0/1525571379.756219812
